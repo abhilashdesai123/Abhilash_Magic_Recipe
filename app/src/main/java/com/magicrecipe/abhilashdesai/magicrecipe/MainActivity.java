@@ -47,7 +47,7 @@ ImageView ii;
 
         String value = getIntent().getStringExtra("EXTRA_SESSION_ID");
         foodList = new ArrayList<>();
-Toast.makeText(getApplicationContext(),value,Toast.LENGTH_LONG).show();
+
 
 url=url+value+"&p=2";
         lv = (ListView) findViewById(R.id.list);
@@ -153,7 +153,13 @@ String site="Website: "+site1;
                    R.id.email});
 
             lv.setAdapter(adapter);
-
+         int xxx=adapter.getCount();
+            String xx=Integer.toString(xxx);
+if(xxx==0)
+{
+    Toast.makeText(getApplicationContext(),"No such ingredients found please check input.",Toast.LENGTH_LONG).show();
+    finish();
+}
             lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                 @Override
