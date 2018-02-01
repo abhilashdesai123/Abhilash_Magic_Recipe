@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ccs"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<com.mypopsy.widget.FloatingSearchView-->
+        <!--android:id="@+id/sbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:paddingRight="8dp"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:hint="Ingredients Here"-->
+        <!--android:background="#90000000"/>-->
+    <org.cryse.widget.persistentsearch.PersistentSearchView
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="244dp"
+        android:elevation="4dp"
+        android:visibility="visible"
+        app:persistentSV_customToolbarHeight="64dp"
+        app:persistentSV_displayMode="toolbar"
+        app:persistentSV_editHintText="Search"
+        app:persistentSV_editHintTextColor="?android:textColorHint"
+        app:persistentSV_editTextColor="?android:textColorPrimary"
+        app:persistentSV_homeButtonMode="burger"
+        app:persistentSV_logoDrawable="@drawable/last"
+        app:persistentSV_searchCardElevation="2dp"
+        app:persistentSV_searchTextColor="?android:textColorPrimary" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/sbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_toStartOf="@+id/sbtn"-->
+        <!--android:ems="10"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:hint="Enter ingredients"-->
+        <!--android:inputType="textPersonName" />-->
+
+
+</RelativeLayout>

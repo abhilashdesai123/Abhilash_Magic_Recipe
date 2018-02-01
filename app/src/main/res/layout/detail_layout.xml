@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/finalaa"
+
+    >
+
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/dis"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+
+        android:layout_marginTop="15dp"
+        app:siBorderWidth="6dp"
+        app:siRadius="6dp"
+        app:siSquare="true" />
+
+    <TextView
+        android:id="@+id/dissh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dis"
+        android:layout_alignStart="@+id/dis"
+        android:layout_below="@+id/dis"
+        android:layout_marginTop="49dp"
+        android:text="Dish: "
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dissh"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/dissh"
+        android:text="Ingredients: "
+        android:textColor="#fff"
+        android:textSize="20dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ing"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/ing"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="Website: "
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>
