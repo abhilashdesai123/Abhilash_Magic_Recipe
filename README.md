@@ -13,4 +13,4 @@ Example 3: onions,cheese,potato
 
 Hit search symbol on your keyboard begin search process
 
-Don't just read recipe, cook it !
+Don't just read recipe, go ahead and try !!
